@@ -25,21 +25,32 @@ class FragmentKeempat : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val aName = arguments?.getString(FragmentKetiga.EXTA_NAME)
 
-        binding.tvName.text = "$aName"
-
         binding.btnBackFragment3.setOnClickListener {
             if (binding.etAddress.text.isNullOrEmpty() || binding.etAge.text.isNullOrEmpty() || binding.etJob.text.isNullOrEmpty()){
                 Toast.makeText(requireContext(), "Ada Kolom Yang Kosong",Toast.LENGTH_SHORT).show()
             }
             else{
+                binding.tvName.text = "$aName"
+                val oddEven = binding.etAge.text.toString().toInt()
+                if (oddEven % 2 == 0){
+                    binding.tvGenapGanjil.text = "Genap"
+                }else{
+                    binding.tvGenapGanjil.text = "Ganjil"
+                }
                 val actionToFragmentKetiga =
                     FragmentKeempatDirections.actionFragmentKeempatToFragmentKetiga(
                         binding.tvName.text.toString(),
                         binding.etAge.text.toString(),
+                        binding.tvGenapGanjil.text.toString(),
                         binding.etAddress.text.toString(),
                         binding.etJob.text.toString())
                     it.findNavController().navigate(actionToFragmentKetiga)
             }
         }
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }
+

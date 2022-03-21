@@ -35,5 +35,8 @@ class FragmentKedua : Fragment() {
             it.findNavController().navigate(R.id.action_fragmentKedua_to_fragmentKetiga, mBundle)
         }
     }
-
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }

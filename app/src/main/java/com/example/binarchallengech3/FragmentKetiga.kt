@@ -33,6 +33,7 @@ class FragmentKetiga : Fragment() {
         val aName = arguments?.getString(FragmentKedua.EXTRA_NAME)
         val bName = FragmentKetigaArgs.fromBundle(arguments as Bundle).name
         val aAge = FragmentKetigaArgs.fromBundle(arguments as Bundle).age
+        val aOddEven = FragmentKetigaArgs.fromBundle(arguments as Bundle).oddEven
         val aAddress = FragmentKetigaArgs.fromBundle(arguments as Bundle).address
         val aJob = FragmentKetigaArgs.fromBundle(arguments as Bundle).job
 
@@ -47,7 +48,12 @@ class FragmentKetiga : Fragment() {
         if (aName == null){
         binding.tvName.text = "$bName"
         binding.tvUsia.text = "Usia Anda : $aAge"
+        binding.tvGenapGanjil.text = "Bernilai : $aOddEven"
         binding.tvAlamat.text = "Alamat Anda : $aAddress"
         binding.tvPekerjaan.text = "Pekerjaan Anda : $aJob"}
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

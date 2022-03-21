@@ -25,7 +25,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tvUsia"
         android:layout_margin="16dp"
-        android:text="Nama Anda"
         android:textSize="16sp"/>
 
     <TextView
@@ -34,9 +33,18 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvGenapGanjil"
+        android:layout_margin="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvGenapGanjil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tvAlamat"
         android:layout_margin="16dp"
-        android:text=" "
         android:textSize="16sp"/>
 
     <TextView
@@ -47,7 +55,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tvPekerjaan"
         android:layout_margin="16dp"
-        android:text=" "
         android:textSize="16sp"/>
 
     <TextView
@@ -58,7 +65,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnToFragment4"
         android:layout_margin="16dp"
-        android:text=" "
         android:textSize="16sp"/>
 
     <Button
