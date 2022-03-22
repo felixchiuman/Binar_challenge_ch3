@@ -7,7 +7,7 @@
     tools:context=".FragmentKetiga">
 
     <TextView
-        android:id="@+id/tvScreen3"
+        android:id="@+id/tv_screen3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,62 +18,62 @@
         android:textSize="48sp"/>
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvLength"
+        app:layout_constraintBottom_toTopOf="@id/tv_length"
         android:layout_margin="16dp"
         android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvLength"
+        android:id="@+id/tv_length"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvWidth"
+        app:layout_constraintBottom_toTopOf="@id/tv_width"
         android:layout_margin="16dp"
         android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvWidth"
+        android:id="@+id/tv_width"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvHeight"
+        app:layout_constraintBottom_toTopOf="@id/tv_height"
         android:layout_margin="16dp"
         android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvHeight"
+        android:id="@+id/tv_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvVol"
+        app:layout_constraintBottom_toTopOf="@id/tv_vol"
         android:layout_margin="16dp"
         android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvVol"
+        android:id="@+id/tv_vol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnToFragment4"
+        app:layout_constraintBottom_toTopOf="@id/btn_to_fragment4"
         android:layout_margin="16dp"
         android:text=" "
         android:textSize="16sp"/>
 
     <Button
-        android:id="@+id/btnToFragment4"
+        android:id="@+id/btn_to_fragment4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"

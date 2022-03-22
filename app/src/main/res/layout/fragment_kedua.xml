@@ -7,7 +7,7 @@
     tools:context=".FragmentKedua">
 
     <TextView
-        android:id="@+id/tvScreen2"
+        android:id="@+id/tv_screen2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,10 +18,10 @@
         android:textSize="48sp"/>
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/btnToFragment3"
+        app:layout_constraintBottom_toTopOf="@id/btn_to_fragment3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="36dp"
@@ -29,7 +29,7 @@
         android:inputType="text"/>
 
     <Button
-        android:id="@+id/btnToFragment3"
+        android:id="@+id/btn_to_fragment3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"

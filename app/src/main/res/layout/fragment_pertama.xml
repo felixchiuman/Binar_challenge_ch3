@@ -7,7 +7,7 @@
     tools:context=".FragmentPertama">
 
     <TextView
-        android:id="@+id/tvScreen1"
+        android:id="@+id/tv_screen1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,7 +18,7 @@
         android:textSize="48sp"/>
 
     <Button
-        android:id="@+id/btnToFragment2"
+        android:id="@+id/btn_to_fragment2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
