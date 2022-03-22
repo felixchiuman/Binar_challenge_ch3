@@ -23,27 +23,25 @@ class FragmentKeempat : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val aName = arguments?.getString(FragmentKetiga.EXTA_NAME)
 
         binding.btnBackFragment3.setOnClickListener {
-            if (binding.etAddress.text.isNullOrEmpty() || binding.etAge.text.isNullOrEmpty() || binding.etJob.text.isNullOrEmpty()){
+            if (binding.etLength.text.isNullOrEmpty() || binding.etWidth.text.isNullOrEmpty() || binding.etHeight.text.isNullOrEmpty()){
                 Toast.makeText(requireContext(), "Ada Kolom Yang Kosong",Toast.LENGTH_SHORT).show()
             }
             else{
-                binding.tvName.text = "$aName"
-                val oddEven = binding.etAge.text.toString().toInt()
-                if (oddEven % 2 == 0){
-                    binding.tvGenapGanjil.text = "Genap"
-                }else{
-                    binding.tvGenapGanjil.text = "Ganjil"
-                }
+                val length = binding.etLength.text.toString().toDouble()
+                val width = binding.etWidth.text.toString().toDouble()
+                val height = binding.etHeight.text.toString().toDouble()
+
+                binding.tvVol.text = (length*width*height).toString()
+
                 val actionToFragmentKetiga =
                     FragmentKeempatDirections.actionFragmentKeempatToFragmentKetiga(
                         binding.tvName.text.toString(),
-                        binding.etAge.text.toString(),
-                        binding.tvGenapGanjil.text.toString(),
-                        binding.etAddress.text.toString(),
-                        binding.etJob.text.toString())
+                        binding.etLength.text.toString(),
+                        binding.etWidth.text.toString(),
+                        binding.etHeight.text.toString(),
+                        binding.tvVol.text.toString())
                     it.findNavController().navigate(actionToFragmentKetiga)
             }
         }

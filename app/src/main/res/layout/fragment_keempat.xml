@@ -19,35 +19,37 @@
         android:inputType="number"/>
 
     <EditText
-        android:id="@+id/etAge"
+        android:id="@+id/etLength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/etAddress"
+        app:layout_constraintBottom_toTopOf="@id/etWidth"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="36dp"
         android:inputType="number"
-        android:hint="Masukan Usia"/>
+        android:hint="Masukan Panjang"/>
 
     <EditText
-        android:id="@+id/etAddress"
+        android:id="@+id/etWidth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/etJob"
+        app:layout_constraintBottom_toTopOf="@id/etHeight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="36dp"
-        android:hint="Masukan Alamat"/>
+        android:inputType="number"
+        android:hint="Masukan Lebar"/>
 
     <EditText
-        android:id="@+id/etJob"
+        android:id="@+id/etHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/btnBackFragment3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="36dp"
-        android:hint="Masukan Pekerjaan"/>
+        android:inputType="number"
+        android:hint="Masukan Tinggi"/>
 
     <Button
         android:id="@+id/btnBackFragment3"
@@ -61,19 +63,22 @@
         android:textAllCaps="false"/>
 
     <TextView
+        android:id="@+id/tvVol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:text=" "
+        android:layout_margin="0dp" />
+
+    <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="0sp"/>
-
-    <TextView
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/tvGenapGanjil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="0sp"/>
+        android:text="Volume Balok \n"
+        android:layout_margin="0dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

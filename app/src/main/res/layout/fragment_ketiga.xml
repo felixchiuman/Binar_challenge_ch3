@@ -23,48 +23,53 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvUsia"
+        app:layout_constraintBottom_toTopOf="@id/tvLength"
         android:layout_margin="16dp"
+        android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvUsia"
+        android:id="@+id/tvLength"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvGenapGanjil"
+        app:layout_constraintBottom_toTopOf="@id/tvWidth"
         android:layout_margin="16dp"
+        android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvGenapGanjil"
+        android:id="@+id/tvWidth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvAlamat"
+        app:layout_constraintBottom_toTopOf="@id/tvHeight"
         android:layout_margin="16dp"
+        android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvAlamat"
+        android:id="@+id/tvHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvPekerjaan"
+        app:layout_constraintBottom_toTopOf="@id/tvVol"
         android:layout_margin="16dp"
+        android:text=" "
         android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/tvPekerjaan"
+        android:id="@+id/tvVol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnToFragment4"
         android:layout_margin="16dp"
+        android:text=" "
         android:textSize="16sp"/>
 
     <Button

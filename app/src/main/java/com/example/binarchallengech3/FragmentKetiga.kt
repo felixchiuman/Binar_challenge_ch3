@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.findNavController
 import com.example.binarchallengech3.databinding.FragmentKetigaBinding
 
@@ -13,10 +12,6 @@ class FragmentKetiga : Fragment() {
 
     private var _binding: FragmentKetigaBinding? = null
     private val binding get() = _binding!!
-
-    companion object{
-        val EXTA_NAME = "EXTRA_NAME"
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,25 +27,25 @@ class FragmentKetiga : Fragment() {
 
         val aName = arguments?.getString(FragmentKedua.EXTRA_NAME)
         val bName = FragmentKetigaArgs.fromBundle(arguments as Bundle).name
-        val aAge = FragmentKetigaArgs.fromBundle(arguments as Bundle).age
-        val aOddEven = FragmentKetigaArgs.fromBundle(arguments as Bundle).oddEven
-        val aAddress = FragmentKetigaArgs.fromBundle(arguments as Bundle).address
-        val aJob = FragmentKetigaArgs.fromBundle(arguments as Bundle).job
+        val aLength = FragmentKetigaArgs.fromBundle(arguments as Bundle).length
+        val aWidth = FragmentKetigaArgs.fromBundle(arguments as Bundle).width
+        val aHeight = FragmentKetigaArgs.fromBundle(arguments as Bundle).height
+        val aVol = FragmentKetigaArgs.fromBundle(arguments as Bundle).vol
 
         binding.btnToFragment4.setOnClickListener {
-            val mBundle = Bundle()
-            val name = binding.tvName.text.toString()
-            mBundle.putString(EXTA_NAME, name)
-            it.findNavController().navigate(R.id.action_fragmentKetiga_to_fragmentKeempat, mBundle)
+            it.findNavController().navigate(R.id.action_fragmentKetiga_to_fragmentKeempat)
         }
 
-        binding.tvName.text = "Nama Anda : $aName"
-        if (aName == null){
-        binding.tvName.text = "$bName"
-        binding.tvUsia.text = "Usia Anda : $aAge"
-        binding.tvGenapGanjil.text = "Bernilai : $aOddEven"
-        binding.tvAlamat.text = "Alamat Anda : $aAddress"
-        binding.tvPekerjaan.text = "Pekerjaan Anda : $aJob"}
+        if (aName != null){
+            binding.tvName.text = "Nama Anda : $aName"
+        }
+        else {
+            binding.tvName.text = "$bName"
+            binding.tvLength.text = "Panjang : $aLength"
+            binding.tvWidth.text = "Lebar : $aWidth"
+            binding.tvHeight.text = "Tinggi : $aHeight"
+            binding.tvVol.text = "Volume : $aVol"
+            binding.btnToFragment4.visibility = View.GONE}
     }
     override fun onDestroy() {
         super.onDestroy()

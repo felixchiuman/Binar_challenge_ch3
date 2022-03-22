@@ -37,22 +37,22 @@
             app:nullable="true"
             android:defaultValue=" " />
         <argument
-            android:name="age"
+            android:name="length"
             app:argType="string"
             app:nullable="true"
             android:defaultValue=" " />
         <argument
-            android:name="oddEven"
+            android:name="width"
             app:argType="string"
             app:nullable="true"
             android:defaultValue=" " />
         <argument
-            android:name="address"
+            android:name="height"
             app:argType="string"
             app:nullable="true"
             android:defaultValue=" " />
         <argument
-            android:name="job"
+            android:name="vol"
             app:argType="string"
             app:nullable="true"
             android:defaultValue=" " />
