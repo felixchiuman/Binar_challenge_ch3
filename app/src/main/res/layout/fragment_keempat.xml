@@ -78,6 +78,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Volume Balok \n"
+        android:textSize="0sp"
         android:layout_margin="0dp" />
 
 
