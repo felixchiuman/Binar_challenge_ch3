@@ -13,6 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_length"
         android:layout_margin="16dp"
         android:text="Screen 4"
         android:textSize="48sp"
@@ -25,7 +26,9 @@
         app:layout_constraintBottom_toTopOf="@id/et_width"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="24dp"
         android:inputType="number"
         android:hint="Masukan Panjang"/>
 
@@ -36,7 +39,9 @@
         app:layout_constraintBottom_toTopOf="@id/et_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="24dp"
         android:inputType="number"
         android:hint="Masukan Lebar"/>
 
@@ -47,7 +52,9 @@
         app:layout_constraintBottom_toTopOf="@id/btn_back_fragment3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="24dp"
         android:inputType="number"
         android:hint="Masukan Tinggi"/>
 
