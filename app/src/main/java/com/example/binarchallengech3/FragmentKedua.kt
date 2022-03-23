@@ -9,8 +9,8 @@ import androidx.navigation.findNavController
 import com.example.binarchallengech3.databinding.FragmentKeduaBinding
 
 class FragmentKedua : Fragment() {
-    var _binding: FragmentKeduaBinding? = null
-    val binding get() = _binding!!
+    private var _binding: FragmentKeduaBinding? = null
+    private val binding get() = _binding!!
 
     companion object{
         val EXTRA_NAME = "EXTRA_NAME"

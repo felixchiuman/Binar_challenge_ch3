@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"
-        android:text="Screen 1"
+        android:text="@string/screen_1"
         android:textSize="48sp"/>
 
     <TextView
@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"
-        android:text="Cuboid Volume App"
+        android:text="@string/cuboid_volume_app"
         android:textColor="@color/black"
         android:textSize="24sp"/>
 
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Go To Screen 2"
+        android:text="@string/go_to_screen_2"
         android:textAllCaps="false"/>
 
 

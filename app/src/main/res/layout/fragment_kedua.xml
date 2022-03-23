@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"
-        android:text="Screen 2"
+        android:text="@string/screen_2"
         android:textSize="48sp"/>
 
     <EditText
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="36dp"
-        android:hint="Masukan Nama"
+        android:hint="@string/masukan_nama"
         android:inputType="text"/>
 
     <Button
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Go To Screen 3"
+        android:text="@string/go_to_screen_3"
         android:textAllCaps="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
