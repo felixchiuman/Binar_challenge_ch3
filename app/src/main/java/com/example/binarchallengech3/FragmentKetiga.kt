@@ -37,7 +37,7 @@ class FragmentKetiga : Fragment() {
         }
 
         if (aName != null){
-            binding.tvName.text = "Nama Anda : $aName"
+            binding.tvName.text = "Hi, $aName"
         }
         else {
             binding.tvName.text = "$bName"
